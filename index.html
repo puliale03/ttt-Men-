@@ -1,0 +1,40 @@
+
+
+<script>
+    function chiediPassword() {
+        var passwordCorretta = "ciao123"; // CAMBIA QUESTA PASSWORD
+        var tentativo = prompt("Inserisci la password per accedere:");
+
+        if (tentativo !== passwordCorretta) {
+            alert("Password errata! Accesso negato.");
+            window.location.href = "https://www.google.com"; // Reindirizza fuori dal sito
+        }
+    }
+    chiediPassword();
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Menù</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Il Mio Menù</h1>
+        <p>Guarda i piatti creati da me!</p>
+    </header>
+
+    <section class="gallery">
+        <img src="piatto1.jpg" alt="Piatto 1">
+        <img src="piatto2.jpg" alt="Piatto 2">
+        <img src="piatto3.jpg" alt="Piatto 3">
+        <img src="piatto4.jpg" alt="Piatto 4">
+    </section>
+
+</body>
+</html>
